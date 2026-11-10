@@ -1,0 +1,1 @@
+Đặt video và ảnh tại đây. Khai báo đường dẫn trong MEDIA_ITEMS ở data.js.\n

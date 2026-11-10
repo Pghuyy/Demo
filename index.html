@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100f1d">
+  <meta name="description" content="19.11 — Một trái tim chung từ 36 lớp chuyên THPT Chuyên Hạ Long.">
+  <title>19.11 — Chuyên Hạ Long</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scene-bg" aria-hidden="true"><span class="nebula nebula-one"></span><span class="nebula nebula-two"></span><div class="stars" id="stars"></div></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Về đầu trang"><span class="brand-symbol">19</span><span><b>CHUYÊN HẠ LONG</b><small>19 · 11 · 2026</small></span></a>
+    <nav aria-label="Điều hướng chính"><a href="#gallery">Video & ảnh</a><a href="#heartArchive">36 lớp</a></nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Chuyển giao diện" title="Chuyển giao diện">☼</button>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap" id="gallery">
+      <div class="featured-media panel">
+        <div class="viewer-stage" id="memoryStage">
+          <div class="viewer-empty" id="memoryEmpty"><span class="empty-icon">▶</span><b>Video sẽ xuất hiện tại đây</b><small>Khoảnh khắc nổi bật · 19.11</small></div>
+          <video id="memoryPlayer" controls playsinline preload="metadata" hidden></video>
+          <img id="memoryImage" alt="Khoảnh khắc được chọn" hidden>
+          <span class="viewer-tag">19.11 <i>·</i> CHUYÊN HẠ LONG</span>
+        </div>
+        <div class="viewer-caption"><div><b id="mediaName">Video nổi bật</b><small id="mediaMeta">Khoảnh khắc 19.11 · Video sẽ được bổ sung sau</small></div><span id="mediaCount">0 mục</span></div>
+        <a class="garden-invite" href="#heartArchive" id="gardenInvite">
+          <span class="invite-mark">✦</span>
+          <span class="invite-copy"><b>Vườn lời chúc đang chờ cậu!</b><small>Hãy bấm vào “Khám phá vườn trái tim” để nhận thật nhiều lời chúc đáng yêu nhé.</small></span>
+          <span class="invite-arrow">↘</span>
+        </a>
+        <div class="media-library"><div class="library-heading"><div><p class="eyebrow">THƯ VIỆN</p><h3>Video & hình ảnh</h3></div><span id="sharedMediaCount">0 nội dung</span></div><div class="media-grid" id="sharedGallery"><p class="empty-library">Video sẽ được cập nhật tại đây.</p></div></div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> 19 · 11 · 2026</p>
+        <h1>36 lớp.<br><em>Một trái tim.</em></h1>
+        <p class="hero-lead">Một dấu mốc nhỏ của đại gia đình Chuyên Hạ Long.</p>
+        <a class="primary-link" href="#heartArchive">Khám phá 36 lớp <span>↘</span></a>
+        <div class="hero-meta"><span class="meta-line"></span><span>THPT CHUYÊN HẠ LONG</span></div>
+        <div class="hero-glow-heart" aria-hidden="true">♥</div>
+      </div>
+    </section>
+
+    <section class="heart-section wrap" id="heartArchive">
+      <div class="section-title"><div><p class="eyebrow">36 LỚP CHUYÊN</p><h2>Mỗi trái tim giữ một <em>lời nhắn.</em></h2><p class="section-subtitle">Chọn một trái tim để xem lời nhắn.</p></div><span class="section-index">36</span></div>
+      <div class="heart-tools"><div class="grade-tabs" role="group" aria-label="Lọc theo khối"><button class="grade-tab active" data-grade="all" type="button" aria-pressed="true">Tất cả</button><button class="grade-tab" data-grade="10" type="button" aria-pressed="false">Khối 10</button><button class="grade-tab" data-grade="11" type="button" aria-pressed="false">Khối 11</button><button class="grade-tab" data-grade="12" type="button" aria-pressed="false">Khối 12</button></div><label class="search-box"><span>⌕</span><input id="heartSearch" type="search" placeholder="Tìm lớp: 10 Toán, 11 Anh 2..." autocomplete="off" aria-label="Tìm lớp"><button id="clearSearch" type="button" aria-label="Xóa tìm kiếm" hidden>×</button></label></div>
+      <div class="heart-board"><div class="heart-canvas-wrap"><div class="heart-canvas" id="heartCanvas" aria-label="36 trái tim tương tác"></div><p class="heart-hint"><span>✦</span> Chạm vào một trái tim</p></div><aside class="heart-info"><div class="info-number">36</div><p class="eyebrow">CHUYÊN HẠ LONG</p><h3>12 lớp mỗi khối.</h3><p>Toán · Tin · Lý · Hóa · Sinh · Văn · Sử · Địa · Anh 1, Anh 2 · Trung · Pháp.</p><button class="random-button" id="randomLetter" type="button">Mở ngẫu nhiên <span>↗</span></button></aside></div>
+      <p class="search-empty" id="searchEmpty" hidden>Không tìm thấy lớp phù hợp.</p>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-symbol">19</span><span><b>CHUYÊN HẠ LONG</b><small>19 · 11 · 2026</small></span></a><span>36 LỚP · MỘT TRÁI TIM</span></footer>
+
+  <dialog class="letter-dialog" id="letterDialog" aria-labelledby="dialogTitle"><button class="dialog-close" id="closeDialog" type="button" aria-label="Đóng">×</button><div class="letter-content"><span class="dialog-symbol">✉</span><p class="eyebrow" id="dialogGrade">KHỐI 10</p><h2 id="dialogTitle">10 Toán</h2><div class="dialog-rule"></div><p class="letter-body" id="dialogCopy" aria-live="polite"></p><span class="dialog-date">19 · 11 · 2026</span></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="data.js"></script><script src="app.js"></script>
+</body>
+</html>
